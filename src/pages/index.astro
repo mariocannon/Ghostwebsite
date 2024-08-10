@@ -6,7 +6,12 @@ import Card from '../components/Card.astro';
 <Layout title="Welcome to Gho$t.">
 	<main>
 
-		<img src="/public/ghostlogo.svg" alt="Ghost" style="width:10%;">
+		<img 
+		class="astro-a"
+			width="10%"
+			height="10%"
+		src="/public/ghostlogo.png" alt="Ghost" ;">
+
 		<h1>Welcome to <span class="text-gradient">Gho$t</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -49,12 +54,13 @@ import Card from '../components/Card.astro';
 	}
 	.astro-a {
 		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(10%);
+		top: 10px;
+		left: 40%;
+		transform: translatex(-10%);
 		width: 220px;
 		height: auto;
 		z-index: -1;
+		opacity: 0.25;
 	}
 	h1 {
 		font-size: 4rem;
